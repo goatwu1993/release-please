@@ -92,6 +92,11 @@ interface GraphQLCommit {
   associatedPullRequests: {
     nodes: GraphQLPullRequest[];
   };
+  author: {
+    user: {
+      login: string;
+    };
+  };
 }
 
 interface GraphQLPullRequest {
@@ -428,6 +433,11 @@ export class GitHub {
                   }
                   sha: oid
                   message
+                  author {
+                    user {
+                      login
+                    }
+                  }
                 }
                 pageInfo {
                   hasNextPage
@@ -486,6 +496,7 @@ export class GitHub {
       const commit: Commit = {
         sha: graphCommit.sha,
         message: graphCommit.message,
+        committer: graphCommit.author.user.login,
       };
       const mergePullRequest = graphCommit.associatedPullRequests.nodes.find(
         pr => {

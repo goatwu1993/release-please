@@ -129,6 +129,7 @@ export class LinkedVersions extends ManifestPlugin {
             message: `chore(${component}): Synchronize ${
               this.groupName
             } versions\n\nRelease-As: ${primaryVersion.toString()}`,
+            committer: 'release-please-bot',
           });
         }
       } else {

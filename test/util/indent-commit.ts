@@ -25,6 +25,7 @@ describe('indentCommit', () => {
 * testing second line`,
         sha: 'abc123',
         files: [],
+        committer: 'release-please-bot',
       })
     );
   });
@@ -40,6 +41,7 @@ describe('indentCommit', () => {
 [Fixes #32]`,
         sha: 'abc123',
         files: [],
+        committer: 'release-please-bot',
       })
     );
   });
@@ -55,6 +57,7 @@ describe('indentCommit', () => {
   this is a second line`,
         sha: 'abc123',
         files: [],
+        committer: 'release-please-bot',
       })
     );
   });

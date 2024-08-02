@@ -23,21 +23,25 @@ describe('CommitSplit', () => {
       sha: 'abc123',
       message: 'commit abc123',
       files: ['pkg1/foo.txt', 'pkg2/bar.txt'],
+      committer: 'release-please-bot',
     },
     {
       sha: 'def234',
       message: 'commit def234',
       files: ['pkg1/foo2.txt', 'pkg3/asdf.txt'],
+      committer: 'release-please-bot',
     },
     {
       sha: 'efg',
       message: 'empty files',
       files: [],
+      committer: 'release-please-bot',
     },
     {
       sha: 'hij',
       message: 'path prefixes',
       files: ['pkg5/foo.txt', 'pkg6/pkg5/foo.txt'],
+      committer: 'release-please-bot',
     },
   ];
   it('defaults to excluding empty commits', () => {
@@ -62,11 +66,13 @@ describe('CommitSplit', () => {
         sha: 'abc123',
         message: 'commit abc123',
         files: ['core/foo.txt', 'pkg2/bar.txt'],
+        committer: 'release-please-bot',
       },
       {
         sha: 'def234',
         message: 'commit def234',
         files: ['core/subpackage/foo2.txt', 'pkg3/asdf.txt'],
+        committer: 'release-please-bot',
       },
     ];
     const commitSplit = new CommitSplit({

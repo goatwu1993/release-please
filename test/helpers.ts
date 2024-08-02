@@ -139,6 +139,7 @@ export function buildMockConventionalCommit(
         .digest('hex'),
       message,
       files: files,
+      committer: 'yoshi-bot',
     },
   ]);
 }
@@ -152,6 +153,7 @@ export function buildMockCommit(message: string, files: string[] = []): Commit {
       .digest('hex'),
     message,
     files: files,
+    committer: 'yoshi-bot',
   };
 }
 

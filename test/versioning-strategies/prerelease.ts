@@ -31,6 +31,7 @@ describe('PrereleaseVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha2',
@@ -42,6 +43,7 @@ describe('PrereleaseVersioningStrategy', () => {
         notes: [{title: 'BREAKING CHANGE', text: 'some bugfix'}],
         references: [],
         breaking: true,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha3',
@@ -53,6 +55,7 @@ describe('PrereleaseVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
     ];
     describe('without prerelease type', () => {
@@ -140,6 +143,7 @@ describe('PrereleaseVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha2',
@@ -151,6 +155,7 @@ describe('PrereleaseVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha3',
@@ -162,6 +167,7 @@ describe('PrereleaseVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
     ];
     describe('without prerelease type', () => {
@@ -249,6 +255,7 @@ describe('PrereleaseVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha3',
@@ -260,6 +267,7 @@ describe('PrereleaseVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
     ];
     describe('without prerelease type', () => {
@@ -330,6 +338,7 @@ describe('PrereleaseVersioningStrategy', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
         {
           sha: 'sha2',
@@ -341,6 +350,7 @@ describe('PrereleaseVersioningStrategy', () => {
           notes: [{title: 'RELEASE AS', text: '3.1.2'}],
           references: [],
           breaking: true,
+          committer: 'release-please-bot',
         },
         {
           sha: 'sha3',
@@ -352,6 +362,7 @@ describe('PrereleaseVersioningStrategy', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
       ];
       const strategy = new PrereleaseVersioningStrategy();
@@ -371,6 +382,7 @@ describe('PrereleaseVersioningStrategy', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
         {
           sha: 'sha2',
@@ -382,6 +394,7 @@ describe('PrereleaseVersioningStrategy', () => {
           notes: [{title: 'RELEASE AS', text: '3.1.2'}],
           references: [],
           breaking: true,
+          committer: 'release-please-bot',
         },
         {
           sha: 'sha3',
@@ -393,6 +406,7 @@ describe('PrereleaseVersioningStrategy', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
         {
           sha: 'sha4',
@@ -404,6 +418,7 @@ describe('PrereleaseVersioningStrategy', () => {
           notes: [{title: 'RELEASE AS', text: '2.0.0'}],
           references: [],
           breaking: true,
+          committer: 'release-please-bot',
         },
       ];
       const strategy = new PrereleaseVersioningStrategy();

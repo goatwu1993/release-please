@@ -26,6 +26,7 @@ const fakeCommit: ConventionalCommit = {
   breaking: false,
   sha: 'abc123',
   files: [],
+  committer: 'release-please-bot',
 };
 
 class RemoveSnapshotVersionUpdate implements VersionUpdater {

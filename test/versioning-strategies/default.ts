@@ -31,6 +31,7 @@ describe('DefaultVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha2',
@@ -42,6 +43,7 @@ describe('DefaultVersioningStrategy', () => {
         notes: [{title: 'BREAKING CHANGE', text: 'some bugfix'}],
         references: [],
         breaking: true,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha3',
@@ -53,6 +55,7 @@ describe('DefaultVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
     ];
     it('can bump a major', async () => {
@@ -89,6 +92,7 @@ describe('DefaultVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha2',
@@ -100,6 +104,7 @@ describe('DefaultVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha3',
@@ -111,6 +116,7 @@ describe('DefaultVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
     ];
     it('can bump a minor', async () => {
@@ -147,6 +153,7 @@ describe('DefaultVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha3',
@@ -158,6 +165,7 @@ describe('DefaultVersioningStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
     ];
     it('can bump a patch', async () => {
@@ -181,6 +189,7 @@ describe('DefaultVersioningStrategy', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
         {
           sha: 'sha2',
@@ -192,6 +201,7 @@ describe('DefaultVersioningStrategy', () => {
           notes: [{title: 'RELEASE AS', text: '3.1.2'}],
           references: [],
           breaking: true,
+          committer: 'release-please-bot',
         },
         {
           sha: 'sha3',
@@ -203,6 +213,7 @@ describe('DefaultVersioningStrategy', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
       ];
       const strategy = new DefaultVersioningStrategy();
@@ -222,6 +233,7 @@ describe('DefaultVersioningStrategy', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
         {
           sha: 'sha2',
@@ -233,6 +245,7 @@ describe('DefaultVersioningStrategy', () => {
           notes: [{title: 'RELEASE AS', text: '3.1.2'}],
           references: [],
           breaking: true,
+          committer: 'release-please-bot',
         },
         {
           sha: 'sha3',
@@ -244,6 +257,7 @@ describe('DefaultVersioningStrategy', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
         {
           sha: 'sha4',
@@ -255,6 +269,7 @@ describe('DefaultVersioningStrategy', () => {
           notes: [{title: 'RELEASE AS', text: '2.0.0'}],
           references: [],
           breaking: true,
+          committer: 'release-please-bot',
         },
       ];
       const strategy = new DefaultVersioningStrategy();

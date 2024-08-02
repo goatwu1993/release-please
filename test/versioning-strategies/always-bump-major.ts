@@ -31,6 +31,7 @@ describe('AlwaysBumpMajorStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha2',
@@ -42,6 +43,7 @@ describe('AlwaysBumpMajorStrategy', () => {
         notes: [{title: 'BREAKING CHANGE', text: 'some bugfix'}],
         references: [],
         breaking: true,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha3',
@@ -53,6 +55,7 @@ describe('AlwaysBumpMajorStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
     ];
     it('bumps major', async () => {
@@ -75,6 +78,7 @@ describe('AlwaysBumpMajorStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha2',
@@ -86,6 +90,7 @@ describe('AlwaysBumpMajorStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha3',
@@ -97,6 +102,7 @@ describe('AlwaysBumpMajorStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
     ];
     it('bumps major for minor', async () => {
@@ -119,6 +125,7 @@ describe('AlwaysBumpMajorStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha3',
@@ -130,6 +137,7 @@ describe('AlwaysBumpMajorStrategy', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
     ];
     it('bumps major for patch', async () => {

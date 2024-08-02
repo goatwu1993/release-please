@@ -30,6 +30,7 @@ describe('filterCommits', () => {
         scope: null,
         breaking: false,
         sha: 'deadbeef',
+        committer: 'release-please-bot',
       },
     ]);
     expect(commits.length).to.equal(0);
@@ -50,6 +51,7 @@ describe('filterCommits', () => {
         scope: null,
         breaking: false,
         sha: 'deadbeef',
+        committer: 'release-please-bot',
       },
     ]);
     expect(commits.length).to.equal(0);
@@ -65,6 +67,7 @@ describe('filterCommits', () => {
         scope: null,
         breaking: false,
         sha: 'deadbeef',
+        committer: 'release-please-bot',
       },
     ]);
     expect(commits.length).to.equal(0);
@@ -85,6 +88,7 @@ describe('filterCommits', () => {
         scope: null,
         breaking: false,
         sha: 'deadbeef',
+        committer: 'release-please-bot',
       },
     ]);
     expect(commits.length).to.equal(1);

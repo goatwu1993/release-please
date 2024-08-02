@@ -132,6 +132,7 @@ describe('PHPYoshi', () => {
             sha: 'def234',
             message: 'misc: some miscellaneous task',
             files: ['Client3/README.md'],
+            committer: 'release-please-bot',
           },
         ],
         latestRelease

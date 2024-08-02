@@ -35,6 +35,7 @@ describe('GitHubChangelogNotes', () => {
       notes: [],
       references: [],
       breaking: false,
+      committer: 'release-please-bot',
     },
     {
       sha: 'sha2',
@@ -46,6 +47,7 @@ describe('GitHubChangelogNotes', () => {
       notes: [{title: 'BREAKING CHANGE', text: 'some bugfix'}],
       references: [],
       breaking: true,
+      committer: 'release-please-bot',
     },
     {
       sha: 'sha3',
@@ -57,6 +59,7 @@ describe('GitHubChangelogNotes', () => {
       notes: [],
       references: [],
       breaking: false,
+      committer: 'release-please-bot',
     },
   ];
   describe('buildNotes', () => {

@@ -30,6 +30,7 @@ export interface Commit {
   message: string;
   files?: string[];
   pullRequest?: PullRequest;
+  committer: string;
 }
 
 export interface ConventionalCommit extends Commit {
@@ -390,6 +391,7 @@ export function parseConventionalCommits(
             notes: parsedCommit.notes,
             references: parsedCommit.references,
             breaking,
+            committer: commit.committer,
           });
         }
       } catch (_err) {

@@ -46,6 +46,7 @@ export class JavaYoshi extends Java {
         files: [],
         references: [],
         sha: 'fake',
+        committer: 'release-please-bot',
       });
     }
     return commits;

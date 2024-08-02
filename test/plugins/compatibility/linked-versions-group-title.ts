@@ -87,6 +87,7 @@ describe('Plugin compatibility', () => {
           sha: 'aaaaaa',
           message: 'feat: some feature',
           files: ['packages/nodeA/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -102,6 +103,7 @@ describe('Plugin compatibility', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
       ]);
       stubFilesFromFixtures({

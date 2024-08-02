@@ -645,6 +645,7 @@ export class Manifest {
         message: commit.message,
         files: commit.files,
         pullRequest: commit.pullRequest,
+        committer: commit.committer,
       });
     }
 

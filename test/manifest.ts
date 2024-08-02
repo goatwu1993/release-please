@@ -934,6 +934,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockReleases(sandbox, github, [
@@ -969,6 +970,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockReleases(sandbox, github, [
@@ -1007,6 +1009,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockReleases(sandbox, github, [
@@ -1043,6 +1046,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockReleases(sandbox, github, [
@@ -1079,6 +1083,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockReleases(sandbox, github, [
@@ -1121,6 +1126,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockReleases(sandbox, github, []);
@@ -1162,6 +1168,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockReleases(sandbox, github, [
@@ -1200,6 +1207,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
         {
           sha: 'def234',
@@ -1214,6 +1222,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockReleases(sandbox, github, [
@@ -1262,6 +1271,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
         {
           sha: 'def234',
@@ -1276,6 +1286,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockReleases(sandbox, github, []);
@@ -1312,11 +1323,13 @@ describe('Manifest', () => {
           sha: 'abc123',
           message: 'some commit message',
           files: [],
+          committer: 'release-please-bot',
         },
         {
           sha: 'def234',
           message: 'this commit should be found',
           files: [],
+          committer: 'release-please-bot',
         },
         {
           sha: 'ghi345',
@@ -1331,6 +1344,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockReleases(sandbox, github, [
@@ -1378,6 +1392,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockReleases(sandbox, github, [
@@ -1414,6 +1429,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -1428,6 +1444,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
 
@@ -1444,11 +1461,13 @@ describe('Manifest', () => {
           sha: 'abc123',
           message: 'some commit message',
           files: [],
+          committer: 'release-please-bot',
         },
         {
           sha: 'def234',
           message: 'this commit should be found',
           files: [],
+          committer: 'release-please-bot',
         },
         {
           sha: 'ghi345',
@@ -1464,6 +1483,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockReleases(sandbox, github, [
@@ -1540,6 +1560,7 @@ describe('Manifest', () => {
             sha: 'def456',
             message: 'fix: some bugfix',
             files: [],
+            committer: 'release-please-bot',
           },
           {
             sha: 'abc123',
@@ -1555,6 +1576,7 @@ describe('Manifest', () => {
               files: [],
               sha: 'abc123',
             },
+            committer: 'release-please-bot',
           },
         ]);
       });
@@ -1758,6 +1780,7 @@ describe('Manifest', () => {
           sha: 'def456',
           message: 'fix: some bugfix',
           files: [],
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -1773,6 +1796,7 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
       ]);
       const getFileContentsStub = sandbox.stub(
@@ -1829,6 +1853,7 @@ describe('Manifest', () => {
             sha: 'aaaaaa',
             message: 'fix: some bugfix',
             files: ['path/a/foo'],
+            committer: 'release-please-bot',
           },
           {
             sha: 'abc123',
@@ -1844,16 +1869,19 @@ describe('Manifest', () => {
               files: [],
               sha: 'abc123',
             },
+            committer: 'release-please-bot',
           },
           {
             sha: 'bbbbbb',
             message: 'fix: some bugfix',
             files: ['path/b/foo'],
+            committer: 'release-please-bot',
           },
           {
             sha: 'cccccc',
             message: 'fix: some bugfix',
             files: ['path/a/foo'],
+            committer: 'release-please-bot',
           },
           {
             sha: 'def234',
@@ -1869,6 +1897,7 @@ describe('Manifest', () => {
               files: [],
               sha: 'def234',
             },
+            committer: 'release-please-bot',
           },
         ]);
       });
@@ -1947,6 +1976,7 @@ describe('Manifest', () => {
           sha: 'aaaaaa',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -1962,16 +1992,19 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
         {
           sha: 'bbbbbb',
           message: 'fix: some bugfix',
           files: ['path/b/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'cccccc',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'def234',
@@ -1987,6 +2020,7 @@ describe('Manifest', () => {
             files: [],
             sha: 'def234',
           },
+          committer: 'release-please-bot',
         },
       ]);
       const manifest = new Manifest(
@@ -2036,6 +2070,7 @@ describe('Manifest', () => {
           sha: 'aaaaaa',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -2051,16 +2086,19 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
         {
           sha: 'bbbbbb',
           message: 'fix: some bugfix',
           files: ['path/b/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'cccccc',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'def234',
@@ -2076,6 +2114,7 @@ describe('Manifest', () => {
             files: [],
             sha: 'def234',
           },
+          committer: 'release-please-bot',
         },
       ]);
       const config = {
@@ -2129,6 +2168,7 @@ describe('Manifest', () => {
           sha: 'aaaaaa',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -2144,16 +2184,19 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
         {
           sha: 'bbbbbb',
           message: 'fix: some bugfix',
           files: ['path/b/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'cccccc',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'def234',
@@ -2169,6 +2212,7 @@ describe('Manifest', () => {
             files: [],
             sha: 'def234',
           },
+          committer: 'release-please-bot',
         },
       ]);
       const config = {
@@ -2209,21 +2253,25 @@ describe('Manifest', () => {
           sha: 'aaaaaa',
           message: 'fix: some bugfix 1',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'bbbbbb',
           message: 'fix: some bugfix 2',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'cccccc',
           message: 'fix: some bugfix',
           files: ['path/b/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'dddddd',
           message: 'fix: some bugfix',
           files: ['path/b/foo'],
+          committer: 'release-please-bot',
         },
       ]);
       mockTags(sandbox, github, []);
@@ -2277,6 +2325,7 @@ describe('Manifest', () => {
           sha: 'aaaaaa',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -2292,16 +2341,19 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
         {
           sha: 'bbbbbb',
           message: 'fix: some bugfix',
           files: ['path/b/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'cccccc',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'def234',
@@ -2317,6 +2369,7 @@ describe('Manifest', () => {
             files: [],
             sha: 'def234',
           },
+          committer: 'release-please-bot',
         },
       ]);
       mockTags(sandbox, github, []);
@@ -2388,6 +2441,7 @@ describe('Manifest', () => {
           sha: 'aaaaaa',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -2403,16 +2457,19 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
         {
           sha: 'bbbbbb',
           message: 'fix: some bugfix',
           files: ['path/b/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'cccccc',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'def234',
@@ -2428,6 +2485,7 @@ describe('Manifest', () => {
             files: [],
             sha: 'def234',
           },
+          committer: 'release-please-bot',
         },
       ]);
       const manifest = new Manifest(
@@ -2492,6 +2550,7 @@ describe('Manifest', () => {
           sha: 'aaaaaa',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -2507,16 +2566,19 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
         {
           sha: 'bbbbbb',
           message: 'fix: some bugfix',
           files: ['path/b/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'cccccc',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'def234',
@@ -2532,6 +2594,7 @@ describe('Manifest', () => {
             files: [],
             sha: 'def234',
           },
+          committer: 'release-please-bot',
         },
       ]);
       const manifest = new Manifest(
@@ -2568,11 +2631,13 @@ describe('Manifest', () => {
           sha: 'aaaaaa',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'cccccc',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
       ]);
       mockTags(sandbox, github, []);
@@ -2631,6 +2696,7 @@ describe('Manifest', () => {
             labels: [],
             files: [],
           },
+          committer: 'release-please-bot',
         },
       ]);
 
@@ -2729,16 +2795,19 @@ describe('Manifest', () => {
           sha: 'aaaaaa',
           message: 'fix: a bugfix',
           files: ['foo', 'pkg.properties'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'bbbbbb',
           message: 'fix: b bugfix',
           files: ['pkg/b/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'cccccc',
           message: 'fix: c bugfix',
           files: ['pkg/c/foo'],
+          committer: 'release-please-bot',
         },
       ]);
       const manifest = new Manifest(
@@ -2811,6 +2880,7 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -2826,6 +2896,7 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
       ]);
       const manifest = new Manifest(
@@ -2870,6 +2941,7 @@ describe('Manifest', () => {
             sha: 'aaaaaa',
             message: 'fix: some bugfix\nfix:another fix',
             files: ['path/a/foo'],
+            committer: 'release-please-bot',
           },
           {
             sha: 'abc123',
@@ -2885,16 +2957,19 @@ describe('Manifest', () => {
               files: [],
               sha: 'abc123',
             },
+            committer: 'release-please-bot',
           },
           {
             sha: 'bbbbbb',
             message: 'fix: some bugfix',
             files: ['path/b/foo'],
+            committer: 'release-please-bot',
           },
           {
             sha: 'cccccc',
             message: 'fix: some bugfix',
             files: ['path/a/foo'],
+            committer: 'release-please-bot',
           },
           {
             sha: 'def234',
@@ -2910,6 +2985,7 @@ describe('Manifest', () => {
               files: [],
               sha: 'def234',
             },
+            committer: 'release-please-bot',
           },
         ]);
       });
@@ -3068,6 +3144,7 @@ describe('Manifest', () => {
           sha: 'def456',
           message: 'fix: some bugfix',
           files: [],
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -3083,6 +3160,7 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
       ]);
       const getFileContentsStub = sandbox.stub(
@@ -3138,6 +3216,7 @@ describe('Manifest', () => {
           sha: 'aaaaaa',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -3153,16 +3232,21 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
         {
           sha: 'bbbbbb',
           message: 'fix: some bugfix',
           files: ['path/b/foo'],
+
+          committer: 'release-please-bot',
         },
         {
           sha: 'cccccc',
           message: 'fix: some bugfix',
           files: ['path/a/foo'],
+
+          committer: 'release-please-bot',
         },
         {
           sha: 'def234',
@@ -3178,6 +3262,8 @@ describe('Manifest', () => {
             files: [],
             sha: 'def234',
           },
+
+          committer: 'release-please-bot',
         },
       ]);
       const manifest = new Manifest(
@@ -3218,6 +3304,7 @@ describe('Manifest', () => {
           sha: 'def456',
           message: 'fix: some bugfix',
           files: [],
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -3233,6 +3320,7 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
       ]);
       const getFileContentsStub = sandbox.stub(
@@ -3289,6 +3377,7 @@ describe('Manifest', () => {
           sha: 'def456',
           message: 'fix: some bugfix',
           files: [],
+          committer: 'release-please-bot',
         },
         {
           sha: 'abc123',
@@ -3304,6 +3393,7 @@ describe('Manifest', () => {
             files: [],
             sha: 'abc123',
           },
+          committer: 'release-please-bot',
         },
       ]);
       const getFileContentsStub = sandbox.stub(
@@ -3370,6 +3460,7 @@ describe('Manifest', () => {
             sha: 'def456',
             message: 'fix: some bugfix',
             files: ['pkg/b/foo.txt', 'pkg/c/foo.txt', 'pkg/d/foo.txt'],
+            committer: 'release-please-bot',
           },
           {
             sha: 'abc123',
@@ -3385,6 +3476,7 @@ describe('Manifest', () => {
               files: [],
               sha: 'abc123',
             },
+            committer: 'release-please-bot',
           },
         ]);
         const getFileContentsStub = sandbox.stub(

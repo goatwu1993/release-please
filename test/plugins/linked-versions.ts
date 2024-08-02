@@ -87,6 +87,7 @@ describe('LinkedVersions plugin', () => {
         sha: 'aaaaaa',
         message: 'fix: some bugfix',
         files: ['path/a/foo'],
+        committer: 'release-please-bot',
       },
       {
         sha: 'abc123',
@@ -102,16 +103,19 @@ describe('LinkedVersions plugin', () => {
           files: [],
           sha: 'abc123',
         },
+        committer: 'release-please-bot',
       },
       {
         sha: 'bbbbbb',
         message: 'fix: some bugfix',
         files: ['path/b/foo'],
+        committer: 'release-please-bot',
       },
       {
         sha: 'cccccc',
         message: 'fix: some bugfix',
         files: ['path/a/foo'],
+        committer: 'release-please-bot',
       },
       {
         sha: 'def234',
@@ -127,6 +131,7 @@ describe('LinkedVersions plugin', () => {
           files: [],
           sha: 'def234',
         },
+        committer: 'release-please-bot',
       },
     ]);
   });

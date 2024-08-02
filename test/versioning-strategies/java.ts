@@ -32,6 +32,7 @@ const breakingCommits = [
     notes: [],
     references: [],
     breaking: false,
+    committer: 'release-please-bot',
   },
   {
     sha: 'sha2',
@@ -43,6 +44,7 @@ const breakingCommits = [
     notes: [{title: 'BREAKING CHANGE', text: 'some bugfix'}],
     references: [],
     breaking: true,
+    committer: 'release-please-bot',
   },
   {
     sha: 'sha3',
@@ -54,6 +56,7 @@ const breakingCommits = [
     notes: [],
     references: [],
     breaking: false,
+    committer: 'release-please-bot',
   },
 ];
 const featureCommits = [
@@ -67,6 +70,7 @@ const featureCommits = [
     notes: [],
     references: [],
     breaking: false,
+    committer: 'release-please-bot',
   },
   {
     sha: 'sha2',
@@ -78,6 +82,7 @@ const featureCommits = [
     notes: [],
     references: [],
     breaking: false,
+    committer: 'release-please-bot',
   },
   {
     sha: 'sha3',
@@ -89,6 +94,7 @@ const featureCommits = [
     notes: [],
     references: [],
     breaking: false,
+    committer: 'release-please-bot',
   },
 ];
 const fixCommits = [
@@ -102,6 +108,7 @@ const fixCommits = [
     notes: [],
     references: [],
     breaking: false,
+    committer: 'release-please-bot',
   },
   {
     sha: 'sha3',
@@ -113,6 +120,7 @@ const fixCommits = [
     notes: [],
     references: [],
     breaking: false,
+    committer: 'release-please-bot',
   },
 ];
 

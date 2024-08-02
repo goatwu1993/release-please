@@ -598,4 +598,5 @@ const FAKE_COMMIT: ConventionalCommit = {
   breaking: false,
   sha: 'abc123',
   files: [],
+  committer: 'release-please-bot',
 };

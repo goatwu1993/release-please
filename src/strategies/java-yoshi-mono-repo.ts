@@ -56,6 +56,7 @@ export class JavaYoshiMonoRepo extends Java {
         files: [],
         references: [],
         sha: 'fake',
+        committer: 'release-please-bot',
       });
     }
     return commits;

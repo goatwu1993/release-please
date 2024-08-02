@@ -36,6 +36,7 @@ describe('DefaultChangelogNotes', () => {
       notes: [],
       references: [],
       breaking: false,
+      committer: 'release-please-bot',
     },
     {
       sha: 'sha2',
@@ -47,6 +48,7 @@ describe('DefaultChangelogNotes', () => {
       notes: [{title: 'BREAKING CHANGE', text: 'some bugfix'}],
       references: [],
       breaking: true,
+      committer: 'release-please-bot',
     },
     {
       sha: 'sha3',
@@ -58,6 +60,7 @@ describe('DefaultChangelogNotes', () => {
       notes: [],
       references: [],
       breaking: false,
+      committer: 'release-please-bot',
     },
   ];
   describe('buildNotes', () => {
@@ -100,6 +103,7 @@ describe('DefaultChangelogNotes', () => {
           notes: [{title: 'BREAKING CHANGE', text: 'some bugfix'}],
           references: [],
           breaking: true,
+          committer: 'release-please-bot',
         },
       ];
       const changelogNotes = new DefaultChangelogNotes();
@@ -119,6 +123,7 @@ describe('DefaultChangelogNotes', () => {
           notes: [{title: 'BREAKING CHANGE', text: 'some bugfix'}],
           references: [],
           breaking: true,
+          committer: 'release-please-bot',
         },
       ];
       const changelogNotes = new DefaultChangelogNotes();

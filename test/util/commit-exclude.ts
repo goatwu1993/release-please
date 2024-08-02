@@ -26,16 +26,19 @@ describe('commit-exclude', () => {
         sha: 'pack1Pack2',
         message: 'commit pack1Pack2',
         files: ['pkg1/foo.txt', 'pkg2/bar.txt'],
+        committer: 'release-please-bot',
       },
       {
         sha: 'rootCommit',
         message: 'commit root',
         files: ['foo.txt'],
+        committer: 'release-please-bot',
       },
       {
         sha: 'pack3',
         message: 'commit pack3',
         files: ['pkg3/bar/foo.txt'],
+        committer: 'release-please-bot',
       },
     ],
     pkg1: [
@@ -43,6 +46,7 @@ describe('commit-exclude', () => {
         sha: 'pack1Pack2',
         message: 'commit pack1Pack2',
         files: ['pkg1/foo.txt', 'pkg2/bar.txt'],
+        committer: 'release-please-bot',
       },
     ],
     pkg2: [
@@ -50,6 +54,7 @@ describe('commit-exclude', () => {
         sha: 'pack1Pack2',
         message: 'commit pack1Pack2',
         files: ['pkg1/foo.txt', 'pkg2/bar.txt'],
+        committer: 'release-please-bot',
       },
     ],
     pkg3: [
@@ -57,11 +62,13 @@ describe('commit-exclude', () => {
         sha: 'pack3',
         message: 'commit pack3',
         files: ['pkg3/foo.txt'],
+        committer: 'release-please-bot',
       },
       {
         sha: 'pack3sub',
         message: 'commit pack3sub',
         files: ['pkg3/bar/foo.txt'],
+        committer: 'release-please-bot',
       },
     ],
     pkg4: [
@@ -69,11 +76,13 @@ describe('commit-exclude', () => {
         sha: 'pack3',
         message: 'commit pack3',
         files: ['pkg3/foo.txt'],
+        committer: 'release-please-bot',
       },
       {
         sha: 'pack3sub',
         message: 'commit pack3sub',
         files: ['pkg3/bar/foo.txt'],
+        committer: 'release-please-bot',
       },
     ],
   };
@@ -120,6 +129,7 @@ describe('commit-exclude', () => {
         sha: first.split('/')[0],
         message: `commit ${first}`,
         files,
+        committer: 'release-please-bot',
       };
     };
     const commits: Record<string, Commit[]> = {

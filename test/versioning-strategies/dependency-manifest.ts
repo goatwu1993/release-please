@@ -31,6 +31,7 @@ describe('DependencyManifest', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha2',
@@ -42,6 +43,7 @@ describe('DependencyManifest', () => {
         notes: [{title: 'BREAKING CHANGE', text: 'some bugfix'}],
         references: [],
         breaking: true,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha3',
@@ -53,6 +55,7 @@ describe('DependencyManifest', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
     ];
     it('can bump a major', async () => {
@@ -89,6 +92,7 @@ describe('DependencyManifest', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha2',
@@ -100,6 +104,7 @@ describe('DependencyManifest', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha3',
@@ -111,6 +116,7 @@ describe('DependencyManifest', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
     ];
     it('can bump a minor', async () => {
@@ -147,6 +153,7 @@ describe('DependencyManifest', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
       {
         sha: 'sha3',
@@ -158,6 +165,7 @@ describe('DependencyManifest', () => {
         notes: [],
         references: [],
         breaking: false,
+        committer: 'release-please-bot',
       },
     ];
     it('can bump a patch', async () => {
@@ -181,6 +189,7 @@ describe('DependencyManifest', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
       ];
       const strategy = new DependencyManifest({});
@@ -200,6 +209,7 @@ describe('DependencyManifest', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
       ];
       const strategy = new DependencyManifest({});
@@ -219,6 +229,7 @@ describe('DependencyManifest', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
       ];
       const strategy = new DependencyManifest({
@@ -240,6 +251,7 @@ describe('DependencyManifest', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
       ];
       const strategy = new DependencyManifest({
@@ -261,6 +273,7 @@ describe('DependencyManifest', () => {
           notes: [],
           references: [],
           breaking: false,
+          committer: 'release-please-bot',
         },
       ];
       const strategy = new DependencyManifest({
